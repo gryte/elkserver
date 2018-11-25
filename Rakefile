@@ -1,5 +1,5 @@
 desc 'Define default task'
-task default: [:cookstyle, :foodcritic, :berksinstall, :berksupdate, :kitchentest, :berksupload]
+task default: [:cookstyle, :foodcritic, :berksupdate, :kitchentest, :berksupload]
 
 desc 'Run cookstyle'
 task :cookstyle do
@@ -11,11 +11,6 @@ task :foodcritic do
   # ignore databag helper rule: http://www.foodcritic.io/#FC086
   # it is not clear how to perform this work outside of the .erb file
   sh 'foodcritic . --tags ~FC086 --tags ~FC078'
-end
-
-desc 'Run berks install in current directory'
-task :berksinstall do
-  sh 'berks install'
 end
 
 desc 'Run berks update in current directory'

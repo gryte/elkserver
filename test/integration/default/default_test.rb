@@ -9,3 +9,8 @@ unless os.bsd?
     its('stdout') { should match %r{\/usr\/lib\/jvm\/java-[1.]*8} } # http://rubular.com/r/IhaUzfbHoC
   end
 end
+
+# elasticsearch is installed
+describe package('elasticsearch') do
+  it { should be_installed }
+end

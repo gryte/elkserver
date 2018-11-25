@@ -6,3 +6,6 @@
 
 # install java
 include_recipe 'java'
+
+# install elasticsearch
+include_recipe 'elasticsearch'
