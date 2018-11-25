@@ -1,12 +1,16 @@
 name 'elkserver'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Adam Linkous'
+maintainer_email 'alinkous+support@gmail.com'
 license 'All Rights Reserved'
 description 'Installs/Configures elkserver'
 long_description 'Installs/Configures elkserver'
-version '0.1.0'
+version '0.2.2'
+supports 'centos'
 chef_version '>= 13.0'
+issues_url 'https://github.com/gryte/elkserver/issues' if respond_to?(:issues_url)
+source_url 'https://github.com/gryte/elkserver' if respond_to?(:source_url)
 
+depends 'java', '~> 3.1.1'
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
 # uploaded to a Supermarket.

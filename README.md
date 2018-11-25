@@ -1,4 +1,3 @@
 # elkserver
 
-TODO: Enter the cookbook description here.
-
+Installs and configures ELK server.
